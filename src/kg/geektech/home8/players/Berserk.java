@@ -7,6 +7,6 @@ public class Berserk extends Hero{
 
     @Override
     public void applySuperPower(Boss boss, Hero[] heroes) {
-
+        this.setDamage(boss.getDamage() / 5 + this.getDamage());
     }
 }
